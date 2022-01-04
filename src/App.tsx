@@ -59,7 +59,7 @@ const App: React.FC<Props> = (props) => {
     const newTodos = todos.filter(t => t.id !== todo.id)
     setTodos(newTodos)
     if (!newTodos.length) {
-      setDoneCount((oldValue) => --oldValue)
+      setDoneCount(0)
     }
   };
 
